@@ -1,35 +1,34 @@
-.nav-ul{
+/* Styles for the navigation */
+.nav-ul {
   padding: 5px;
   margin: 0;
   background-color: skyblue;
 }
-.nav-right{
+.nav-right {
   text-align: right;
 }
-.nav-ul li{
+.nav-ul li {
   display: inline-block;
   padding: 10px;
 }
-
-.nav-ul li a{
-    color: #fff;
-    padding: 5px;
-    text-decoration: none;
+.nav-ul li a {
+  color: #fff;
+  padding: 5px;
+  text-decoration: none;
 }
-
 .logout-link {
   float: right;
   margin-right: 20px;
 }
-
-.logo{
-    width: 45px;
-    float: left;
-    border-radius: 50px;
-    margin-top: 3px;
-    margin-left: 20px;
+.logo {
+  width: 45px;
+  float: left;
+  border-radius: 50px;
+  margin-top: 3px;
+  margin-left: 20px;
 }
 
+/* Styles for the footer */
 .footer {
   position: absolute;
   bottom: 0px;
@@ -38,15 +37,17 @@
   background-color: skyblue;
 }
 
+/* Center container for centering elements */
 .centerContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 50px 0; /* Adjust the top and bottom padding as needed */
+  min-height: 80vh;
 }
 
-.register, .login {
+/* Common styles for forms */
+.register, .login, .add-product {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -55,10 +56,11 @@
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 400px;
-  background-color: #fff; /* Ensure the form has a white background */
-  margin: 20px; /* Add margin to separate from other content */
+  background-color: #fff;
+  margin: 20px;
 }
 
+/* Input box styles */
 .inputBox {
   display: block;
   margin: 10px 0;
@@ -69,6 +71,7 @@
   box-sizing: border-box;
 }
 
+/* Button styles */
 .appButton {
   margin-top: 20px;
   padding: 10px;
@@ -80,42 +83,63 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
 .appButton:hover {
   background-color: #0056b3;
 }
-/* 
-.register{
-  margin-left: 30px;
-}
-.login{
-  margin-left: 30px;
+
+/* Error message styles */
+.invalid-input {
+  color: red;
+  font-size: 12px;
+  margin-top: -10px;
+  margin-bottom: 5px;
 }
 
-.inputBox{
-  display: block;
-  margin: 10px;
-  padding: 7px;
-  width: 300px;
-  border: 1px solid skyblue;
-}   
+.product-list-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-.appButton{
-  margin: 25px;
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.product-table th, .product-table td {
+  border: 1px solid #ccc;
   padding: 10px;
-  width: 120px;
-  background-color: skyblue;
-  border: 1px solid;
-  cursor: pointer;
-} */
+  text-align: left;
+}
+
+.product-table th {
+  background-color: #007bff;
+  color: white;
+}
+
+.product-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.product-table tbody tr:hover {
+  background-color: #ddd;
+}
+
+.product-table tbody tr td {
+  text-align: center;
+}
 
 
+/* Keyframes for animation (optional) */
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -126,11 +150,9 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
 .App-link {
   color: #61dafb;
 }
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
