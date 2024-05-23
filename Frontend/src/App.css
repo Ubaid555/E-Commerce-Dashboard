@@ -3,6 +3,9 @@
   margin: 0;
   background-color: skyblue;
 }
+.nav-right{
+  text-align: right;
+}
 .nav-ul li{
   display: inline-block;
   padding: 10px;
@@ -14,6 +17,18 @@
     text-decoration: none;
 }
 
+.logout-link {
+  float: right;
+  margin-right: 20px;
+}
+
+.logo{
+    width: 45px;
+    float: left;
+    border-radius: 50px;
+    margin-top: 3px;
+    margin-left: 20px;
+}
 
 .footer {
   position: absolute;
@@ -22,9 +37,61 @@
   width: 100%;
   background-color: skyblue;
 }
+
+.centerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0; /* Adjust the top and bottom padding as needed */
+}
+
+.register, .login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  background-color: #fff; /* Ensure the form has a white background */
+  margin: 20px; /* Add margin to separate from other content */
+}
+
+.inputBox {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.appButton {
+  margin-top: 20px;
+  padding: 10px;
+  width: 150px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.appButton:hover {
+  background-color: #0056b3;
+}
+/* 
 .register{
   margin-left: 30px;
 }
+.login{
+  margin-left: 30px;
+}
+
 .inputBox{
   display: block;
   margin: 10px;
@@ -40,8 +107,7 @@
   background-color: skyblue;
   border: 1px solid;
   cursor: pointer;
-}
-
+} */
 
 
 @media (prefers-reduced-motion: no-preference) {
